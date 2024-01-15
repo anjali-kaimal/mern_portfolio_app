@@ -3,6 +3,8 @@ const app = express();
 const dbConfig = require("./config/dbConfig");
 require("dotenv").config();
 const portfolioRoute = require("./routes/portfolioRoute");
+const cors=require("cors");
+app.use(cors());
 
 app.use(express.json());
 
